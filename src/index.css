@@ -1,9 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-sizing: normal;
+}
+
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-height: 100dvh;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+h4 {
+  font-size: 1.00rem;
+}
+
+h5 {
+  font-size: 0.83rem;
+}
+
+h6 {
+  font-size: 0.67rem;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  color: inherit;
+  height: 0;
+  overflow: visible;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "section1 section2"
+    "section3 section4";
+  grid-template-rows: 100px 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  min-height: 100vh;
   background-color: grey;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  /* Set the background color you prefer */
+  padding: 1rem;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+}
+
+.section1 {
+  grid-area: section1;
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+.section3 {
+  grid-area: section3;
+}
+
+.section4 {
+  grid-area: section4;
 }
 
 h1 {

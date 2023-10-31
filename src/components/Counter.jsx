@@ -1,13 +1,19 @@
+import "./Counter.css";
+
 export default function Counter({ count, setCount }) {
   return (
-    <div>
-      <h1>Counter</h1>
+    <div className="section1">
       <div className="card">
+        <h2>Counter</h2>
         <button onClick={() => setCount((count) => count + 1)}>+</button>
         {count === 0 ? (
-          <span>Let's start!</span>
+          <span>
+            <h2>Let's start!</h2>
+          </span>
         ) : (
-          <span>You clicked {count} times</span>
+          <span>
+            <h2>You clicked {count} times</h2>
+          </span>
         )}
         {count !== 0 && (
           <button onClick={() => setCount((count) => count - 1)}>-</button>
