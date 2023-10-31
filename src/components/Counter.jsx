@@ -2,7 +2,7 @@ import "./Counter.css";
 
 export default function Counter({ count, setCount }) {
   return (
-    <div className="section1">
+    <div className="sec">
       <div className="card">
         <h2>Counter</h2>
         <button onClick={() => setCount((count) => count + 1)}>+</button>
@@ -12,7 +12,9 @@ export default function Counter({ count, setCount }) {
           </span>
         ) : (
           <span>
-            <h2>You clicked {count} times</h2>
+            <h2>
+              You clicked {count} time{count === 1 ? "" : "s"}
+            </h2>
           </span>
         )}
         {count !== 0 && (
