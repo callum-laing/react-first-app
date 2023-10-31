@@ -1,0 +1,38 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  /* Set the background color you prefer */
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  /* Allow main content to fill available space */
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  /* Set the background color you prefer */
+  padding: 1rem;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
