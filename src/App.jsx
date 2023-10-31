@@ -8,9 +8,7 @@ function App() {
 
   return (
     <div>
-      <header>
-        <Heading />
-      </header>
+      <Heading />
       <main>
         <Counter count={count} setCount={setCount} />
       </main>
