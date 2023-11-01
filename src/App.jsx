@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Counter from "./components/Counter.jsx";
-import Heading from "./components/Heading.jsx";
+import Counter from "./components/counter/Counter.jsx";
+import Heading from "./components/header/Heading.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
