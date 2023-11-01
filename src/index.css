@@ -62,7 +62,7 @@ hr {
   overflow: visible;
 }
 
-body {
+#root {
   display: grid;
   grid-template-areas:
     "heading heading"
@@ -88,22 +88,27 @@ section {
 
 .heading {
   grid-area: heading;
+  border: 1px solid red;
 }
 
 .section1 {
   grid-area: section1;
+  border: 1px solid yellow;
 }
 
 .section2 {
   grid-area: section2;
+  border: 1px solid brown;
 }
 
 .section3 {
   grid-area: section3;
+  border: 1px solid orange;
 }
 
 .section4 {
   grid-area: section4;
+  border: 1px solid pink;
 }
 
 h1 {

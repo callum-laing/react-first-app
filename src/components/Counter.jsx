@@ -2,7 +2,7 @@ import "./Counter.css";
 
 export default function Counter({ count, setCount }) {
   return (
-    <div className="sec">
+    <div className="section1">
       <div className="card">
         <h2>Counter</h2>
         <button onClick={() => setCount((count) => count + 1)}>+</button>

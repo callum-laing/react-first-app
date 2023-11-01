@@ -7,13 +7,12 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <>
       <Heading />
       <main>
         <Counter count={count} setCount={setCount} />
       </main>
-      <footer></footer>
-    </div>
+    </>
   );
 }
 
