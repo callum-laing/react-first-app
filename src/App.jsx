@@ -11,6 +11,9 @@ function App() {
       <Heading />
       <main>
         <Counter count={count} setCount={setCount} />
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
       </main>
     </>
   );

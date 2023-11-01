@@ -62,56 +62,31 @@ hr {
   overflow: visible;
 }
 
+h1 {
+  font-size: 3.2em;
+  line-height: 0.5;
+}
+
 #root {
   display: grid;
-  grid-template-areas:
-    "heading heading"
-    "section1 section2"
-    "section3 section4";
-  grid-template-rows: 100px 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   grid-gap: 10px;
   min-height: 100vh;
   background-color: grey;
 }
 
-section {
+main {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: white;
-  /* Set the background color you prefer */
-  padding: 1rem;
-  text-align: center;
-}
-
-.heading {
-  grid-area: heading;
-  border: 1px solid red;
-}
-
-.section1 {
-  grid-area: section1;
-  border: 1px solid yellow;
-}
-
-.section2 {
-  grid-area: section2;
-  border: 1px solid brown;
-}
-
-.section3 {
-  grid-area: section3;
-  border: 1px solid orange;
-}
-
-.section4 {
-  grid-area: section4;
-  border: 1px solid pink;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  min-height: 100%;
 }
