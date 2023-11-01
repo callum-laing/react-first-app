@@ -29,11 +29,3 @@ button:hover {
 button:focus-visible {
     outline-offset: 1px;
 }
-
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
